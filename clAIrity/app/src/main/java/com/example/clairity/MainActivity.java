@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
 
     Button submit;
     Button clear;
+    static String text;
+    static String date;
+
 
 
     @Override
@@ -22,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick( View view){
+             text =  ((EditText) findViewById(R.id.dream)).getText().toString();
+                date = ((EditText) findViewById(R.id.Date)).getText().toString();
                 Intent intent_one = new Intent (MainActivity.this,SecondActivity.class);
                 startActivity(intent_one);
             }
@@ -37,9 +42,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-
     }
+    public static String getText(){
+        return text;
+    }
+    public static String getDate(){
+        return date;
+    }
+
 }
