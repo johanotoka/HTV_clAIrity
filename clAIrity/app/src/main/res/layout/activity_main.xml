@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/dream"
+        android:layout_width="333dp"
+        android:layout_height="218dp"
+        android:backgroundTint="#EDE5E5"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="write your dream"
+        android:includeFontPadding="true"
+        android:inputType="textAutoCorrect|textPersonName"
+        android:textColor="#F1EAEA"
+        android:textColorHighlight="#EFEBEB"
+        android:textColorHint="#EDE8E8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <Button
+        android:id="@+id/Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Submit"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dream"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="serif"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dream"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E4DBDB"
+        android:ems="10"
+        android:fontFamily="@font/amiri_bold"
+        android:hint="Date"
+        android:includeFontPadding="true"
+        android:inputType="date"
+        android:textColor="#ECE8E8"
+        android:textColorHint="#F1EAEA"
+        app:layout_constraintBottom_toTopOf="@+id/dream"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
