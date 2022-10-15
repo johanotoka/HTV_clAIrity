@@ -9,31 +9,32 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="237dp"
-        android:layout_height="166dp"
+        android:layout_width="326dp"
+        android:layout_height="146dp"
         android:fontFamily="@font/b612_bold_italic"
         android:includeFontPadding="false"
         android:text=""
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.192" />
+        app:layout_constraintVertical_bias="0.264" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="107dp"
-        android:layout_height="81dp"
+        android:layout_width="143dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/b612_bold_italic"
         android:includeFontPadding="false"
         android:text="Date:"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.068" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
 </androidx.constraintlayout.widget.ConstraintLayout>

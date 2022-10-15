@@ -19,6 +19,6 @@ public class SecondActivity extends AppCompatActivity {
         TextView theTextView = (TextView) findViewById(R.id.textView2);
         theTextView.setText(text);
         TextView theTextView2 = (TextView) findViewById(R.id.textView3);
-        theTextView2.setText("Date: "+date);
+        theTextView2.setText("Date: \n"+date);
     }
 }
