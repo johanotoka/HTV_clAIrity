@@ -1,5 +1,7 @@
 # HTV_clAIrity
 
+Meet clArity! An app that helps you generate a picture for your imagination or dream. If you are interested in daily journaling to help with anxiety and keeping a daily record, we are here for you!
+
 ## Inspiration 
 In the past 2 years, the importance of mental health has never been so prominent on the global stage. With isolation leaving us with crippling effects, and social anxiety many have suffered in ways that could potentially be impacting them for the rest of their life. One of the difficulties that people with anxiety, depression, and some other mental health issues face, is imagination. Our main goal in this project was targeting this group (which includes our teammates) and helping them to take small steps towards bringing it back. clAIrity is a tool that offers users who are looking to express themselves with words and see a visual feedback representation of those exact words that they used to express themselves. clAIrity was inspired by the Health and Discovery portions of Hack the Valley, our team has all dealt with the effects of mental health, or lack thereof thought it would be a crazy, but awesome idea to build an app that would help promote the processing of our thoughts and emotions using words. 
 
