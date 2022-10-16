@@ -13,6 +13,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import com.chaquo.python.PyObject;
+import com.chaquo.python.Python;
+
 public class MainActivity extends AppCompatActivity {
 
     Button submit;
@@ -34,9 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
         submit.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick( View view){
-             text =  ((EditText) findViewById(R.id.dream)).getText().toString();
+            public void onClick(View view){
+                text =  ((EditText) findViewById(R.id.dream)).getText().toString();
                 date = ((EditText) findViewById(R.id.Date)).getText().toString();
+
                 ArrayList<String> list = new ArrayList<String>();
                 String log = num +"";
                 list.add(log);
@@ -46,6 +50,16 @@ public class MainActivity extends AppCompatActivity {
                 MainList.add(list);
                 list = new ArrayList<String>();
 
+                // Call Python script
+                Python py = Python.getInstance();
+                PyObject apicall = py.getModule("api_call");
+                try {
+                    PyObject call = apicall.callAttrThrows("main", text);
+                } catch (Throwable e) {
+                    e.printStackTrace();
+                }
+                
+                // Change activity
                 Intent intent_one = new Intent (MainActivity.this,SecondActivity.class);
                 Context context = getApplicationContext();
                 CharSequence msg = "Please take a screenshot:)";
