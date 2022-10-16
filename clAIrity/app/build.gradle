@@ -15,6 +15,10 @@ android {
         versionName "1.0"
 
         python{
+            pyc {
+                src true
+            }
+            buildPython "C:\\Users\\johan\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
             pip{
                 install "requests"
             }

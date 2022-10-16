@@ -7,6 +7,9 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.EditText;
 
+import com.chaquo.python.PyObject;
+import com.chaquo.python.Python;
+
 public class MainActivity extends AppCompatActivity {
 
     Button submit;
@@ -25,10 +28,18 @@ public class MainActivity extends AppCompatActivity {
 
         submit.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick( View view){
-             text =  ((EditText) findViewById(R.id.dream)).getText().toString();
+            public void onClick(View view){
+                text =  ((EditText) findViewById(R.id.dream)).getText().toString();
                 date = ((EditText) findViewById(R.id.Date)).getText().toString();
-
+                // Call Python script
+                Python py = Python.getInstance();
+                PyObject apicall = py.getModule("api_call");
+                try {
+                    PyObject call = apicall.callAttrThrows("main", text);
+                } catch (Throwable e) {
+                    e.printStackTrace();
+                }
+                // Change activity
                 Intent intent_one = new Intent (MainActivity.this,SecondActivity.class);
 
                 startActivity(intent_one);
