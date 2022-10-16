@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 } catch (Throwable e) {
                     e.printStackTrace();
                 }
-                
+
                 // Change activity
                 Intent intent_one = new Intent (MainActivity.this,SecondActivity.class);
                 Context context = getApplicationContext();
